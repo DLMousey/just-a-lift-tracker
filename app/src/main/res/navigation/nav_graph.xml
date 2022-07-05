@@ -9,7 +9,22 @@
         android:id="@+id/LiftListFragment"
         android:name="dev.dlmousey.justalifttracker.fragments.LiftListFragment"
         android:label="Lift List Fragment"
-        tools:layout="@layout/fragment_lift_list" />
+        tools:layout="@layout/fragment_lift_list">
+        <action
+            android:id="@+id/action_menuItem_to_setList"
+            app:destination="@id/SetListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SetListFragment"
+        android:name="dev.dlmousey.justalifttracker.fragments.SetListFragment"
+        android:label="Set List Fragment"
+        tools:layout="@layout/fragment_set_list">
+        <action
+            android:id="@+id/action_menuItem_to_setList"
+            app:destination="@id/SetListFragment" />
+    </fragment>
+
 <!--    -->
 <!--    <fragment-->
 <!--        android:id="@+id/FirstFragment"-->

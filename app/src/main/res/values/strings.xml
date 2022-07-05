@@ -16,4 +16,12 @@
         <item>Pull</item>
         <item>Legs</item>
     </string-array>
+    <string-array name="lifts">
+        <item>1|Flat Bench Press</item>
+        <item>2|Bicep Curl</item>
+        <item>3|Tricep Extension</item>
+        <item>4|Military Press</item>
+        <item>5|Decline Press Machine</item>
+        <item>6|Pec-Deck Chest Fly</item>
+    </string-array>
 </resources>

@@ -4,6 +4,7 @@ import androidx.annotation.WorkerThread
 import dev.dlmousey.justalifttracker.database.dao.SetDao
 import dev.dlmousey.justalifttracker.database.models.Set
 import kotlinx.coroutines.flow.Flow
+import java.util.*
 
 class SetRepository(private val setDao: SetDao) {
 
@@ -21,6 +22,10 @@ class SetRepository(private val setDao: SetDao) {
 
     fun findSetWithoutLiftById(setId: Long): Flow<Set> {
         return setDao.getSetWithoutLift(setId)
+    }
+
+    fun findAllSetsByDate(date: Date?): Flow<List<Set>> {
+        return setDao.getSetsByDate(date)
     }
 
     fun deleteSet(set: Set) {

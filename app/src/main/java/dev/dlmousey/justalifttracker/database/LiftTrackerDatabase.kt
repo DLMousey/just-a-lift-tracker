@@ -12,7 +12,7 @@ import dev.dlmousey.justalifttracker.database.models.Lift
 import dev.dlmousey.justalifttracker.database.models.Set
 import kotlinx.coroutines.CoroutineScope
 
-@Database(entities = [Set::class, Lift::class], version = 2, exportSchema = false)
+@Database(entities = [Set::class, Lift::class], version = 4, exportSchema = false)
 @TypeConverters(DateConverter::class)
 abstract class LiftTrackerDatabase : RoomDatabase() {
 

@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="dev.dlmousey.justalifttracker.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_sets"
         android:orderInCategory="100"
+        android:title="Sets"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="200"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 </menu>
